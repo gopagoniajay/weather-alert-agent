@@ -1,6 +1,6 @@
 # 🌦️ Weather AI Agent – Telegram Bot
 
-> 🚀 A production-ready, cloud-deployed Telegram bot that autonomously monitors weather conditions, analyzes risk, and delivers intelligent text & voice alerts in real time.
+ 🚀 A production-ready, cloud-deployed Telegram bot that autonomously monitors weather conditions, analyzes risk, and delivers intelligent text & voice alerts in real time.
 
 ---
 
@@ -19,6 +19,7 @@ The bot runs **24/7 in the cloud** and supports **multi-city subscriptions**, ma
 - Past 3-day weather analysis
 - Next 3-day forecast
 - Next 24-hour (3-hour interval) breakdown
+
 
 ### 🧠 AI-Style Reasoning
 - Risk-based alert classification:
@@ -46,12 +47,13 @@ The bot runs **24/7 in the cloud** and supports **multi-city subscriptions**, ma
 ---
 
 ## 🏗️ Architecture
-
+```
 Telegram User
 ↓
 Telegram Bot API
 ↓
 Weather AI Agent (Python Backend)
+
 ├─ Weather API Integration
 ├─ Risk Analysis & NLP
 ├─ Background Scheduler (10-min loop)
@@ -60,7 +62,7 @@ Weather AI Agent (Python Backend)
 ↓
 OpenWeatherMap API
 
-
+```
 
 
 > The bot itself functions as an **asynchronous backend service**, similar to a microservice.
@@ -91,7 +93,8 @@ The bot is deployed on **Railway** as a continuously running background service.
 
 ## ⚙️ Setup & Run Locally
 
-### 1️⃣ Clone Repository
+###  Clone Repository
+
 ```bash
 git clone https://github.com/gopagoniajay/weather-alert-agent/weather-ai-agent.git
 cd weather-ai-agent
@@ -108,8 +111,12 @@ OPENWEATHER_API_KEY = "YOUR_OPENWEATHER_API_KEY"
 ## Run Bot
 python bot.py
 
+```
+---
 
 📂 Project Structure
+```bash
+
 weather-ai-agent/
 │
 ├── bot.py                 # Main backend service
@@ -118,5 +125,25 @@ weather-ai-agent/
 ├── runtime.txt            # Python version (Railway)
 ├── .gitignore
 └── README.md
+```
+---
+
+🔐 Security Practices
+
+- API keys are never committed
+- Secrets managed via environment variables
+- User subscription data stored locally
+- GitHub secret scanning handled correctly
+---
+
+🧠 Why This Is an AI Agent
+
+- This project qualifies as an AI-style autonomous agent because it:
+- Continuously observes external data (weather APIs)
+- Makes decisions based on risk scoring
+- Generates natural-language explanations
+- Acts autonomously via background scheduling
+- Escalates alerts intelligently with voice output
+
 
 
