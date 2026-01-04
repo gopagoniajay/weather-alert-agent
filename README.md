@@ -1,6 +1,9 @@
-# 🌦️ Weather AI Agent – Telegram Bot
+# 🌦️ Peri Weather AI Agent – Telegram Bot
 
- 🚀 A production-ready, cloud-deployed Telegram bot that autonomously monitors weather conditions, analyzes risk, and delivers intelligent text & voice alerts in real time.
+🤖 **Live Demo Bot:** [@peri_weather_bot](https://t.me/peri_weather_bot)
+---
+
+🚀 A production-ready, cloud-deployed Telegram bot that autonomously monitors weather conditions, analyzes risk, and delivers intelligent text & voice alerts in real time.
 
 ---
 
@@ -144,6 +147,8 @@ weather-ai-agent/
 - Generates natural-language explanations
 - Acts autonomously via background scheduling
 - Escalates alerts intelligently with voice output
+
+
 
 
 
