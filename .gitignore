@@ -1,0 +1,13 @@
+# Secrets
+config.py
+
+# Runtime data
+subscriptions.json
+voice.mp3
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
