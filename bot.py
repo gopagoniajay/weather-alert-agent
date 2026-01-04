@@ -16,7 +16,11 @@ from telegram import (
     Bot
 )
 
-from config import BOT_TOKEN, OPENWEATHER_API_KEY
+import os
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
+
 
 # =======================
 # STORAGE
