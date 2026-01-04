@@ -302,9 +302,15 @@ async def auto_loop(app):
 # MAIN
 # =======================
 async def post_init(app):
-    app.create_task(auto_loop(app))
+    async def start_loop():
+        await asyncio.sleep(5)
+        await auto_loop(app)
+
+    asyncio.create_task(start_loop())
+
 
 app = ApplicationBuilder().token(BOT_TOKEN).post_init(post_init).build()
+
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("weather", weather))
 app.add_handler(CallbackQueryHandler(button_handler))
